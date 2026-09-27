@@ -5,6 +5,7 @@
     <title>Hotel Feedback Form</title>
   </head>
   <body>
+    <!-- Encabezado del formulario -->
     <header>
       <h1>Hotel Feedback Form</h1>
       <p>
@@ -12,8 +13,11 @@
         stay.
       </p>
     </header>
+
+    <!-- Formulario principal -->
     <main>
       <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <!-- Información personal -->
         <fieldset>
           <legend>Personal Information</legend>
           <label for="full-name">Name (required):</label>
@@ -32,6 +36,7 @@
           <input type="number" name="age" id="age" min="3" max="100" />
         </fieldset>
 
+        <!-- Historial de estancia -->
         <fieldset>
           <legend>Was this your first time at our hotel?</legend>
           <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
@@ -40,6 +45,7 @@
           <label for="no-option">No</label>
         </fieldset>
 
+        <!-- Motivo de elección -->
         <fieldset>
           <legend>
             Why did you choose to stay at our hotel? (Check all that apply)
@@ -72,6 +78,7 @@
           <label for="price">Price</label>
         </fieldset>
 
+        <!-- Calificación de servicios -->
         <fieldset>
           <legend>Ratings</legend>
 
@@ -96,6 +103,7 @@
           </select>
         </fieldset>
 
+        <!-- Comentarios adicionales y envío -->
         <label for="comments">Other Comments?</label>
         <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
 
